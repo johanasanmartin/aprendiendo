@@ -1,16 +1,16 @@
-# Floating WhatsApp
+# WhatsApp Flotante
 
-This is a very simple floating WhatsApp button plugin for jQuery.
+Este es un complemento de botón flotante de WhatsApp muy simple para jQuery.
 
-It adds a floating-like button to your site that calls the [WhatsApp Click to Chat API](https://faq.whatsapp.com/en/26000030/).
+Puedes agregar un botón flotante a tu sitio que llama a la [API de WhatsApp Click para Chetear](https://faq.whatsapp.com/en/26000030/).
 
-It will automatically begin a WhatsApp chat with the number set when the user clicks the button.
+Comenzaras automáticamente un chat de WhatsApp con el número establecido cuando el usuario haga clic en el botón.
 
-You an also activate a fake chat window with a customized message where the user can input their reply before opening WhatsApp.
+También puedes activar una ventana de chat falsa con un mensaje personalizado donde el usuario puede ingresar su respuesta antes de abrir WhatsApp.
 
-## Installing
+## Instalación
 
-Link the files to your html (make sure you load the files after jQuery)
+Vincula los archivos a tu html (asegurate de cargar los archivos después de jQuery)
 
 ```html
 <script type="text/javascript" src="jquery-3.3.1.min.js"></script>
@@ -18,9 +18,9 @@ Link the files to your html (make sure you load the files after jQuery)
 <link rel="stylesheet" href="floating-wpp.min.css">
 ```
 
-## How to use it
+## Cómo usarlo
 
-Create a div element and select it with jQuery, then call the plugin using the function `$().floatingWhatsApp([options])`.
+Crea un elemento div y seleccionalo con jQuery, luego llama al complemento usando la función `$().floatingWhatsApp([options])`.
 
 ```html
 <body>
@@ -34,32 +34,32 @@ Create a div element and select it with jQuery, then call the plugin using the f
   });
 </script>
 ```
-### Fake Chat Window
+### Ventana de Chat Falsa
 
-Enable a little fake chat window floating above the button:
+Habilita una pequeña ventana de chat falsa que flota sobre el botón:
 
 ```js
 $('#myDiv').floatingWhatsApp({
-    phone: '5491133359850',
-    popupMessage: 'Hello, how can we help you?',
+    phone: '525541696993',
+    popupMessage: 'Bienvenido, ¿cómo puedo ayudarte?',
     showPopup: true
 });
 ```
 
 ![Fake Chat Window](fake-chat.png)
 
-### Customization
+### Personalización
 
-You can customize the appearance of the button and the chat window:
+Puedes personalizar la apariencia del botón y la ventana de chat:
 
 ```js
 $('#myDiv').floatingWhatsApp({
-    phone: '5491133359850',
-    popupMessage: 'Hello, how can we help you?',
-    message: "I'd like to order a pizza",
+    phone: '525541696993',
+    popupMessage: 'Bienvenido, ¿cómo puedo ayudarte?',
+    message: "Tengo una pregunta.",
     showPopup: true,
     showOnIE: false,
-    headerTitle: 'Welcome!',
+    headerTitle: 'WhatsApp - Chatear con Soluciones DC!',
     headerColor: 'crimson',
     backgroundColor: 'crimson',
     buttonImage: '<img src="burger.svg" />'
@@ -68,20 +68,20 @@ $('#myDiv').floatingWhatsApp({
 
 ![Custom settings](custom-settings.png)
 
-### Options
+### Opciones
 
-| option              | value                                         | default                  | description |
+| opción              | valor                                         | default                  | descripción |
 |---------------------|-----------------------------------------------|--------------------------|-------------|
-| phone               | `string`                                      | `''`                     | WhatsApp [intenational number](https://faq.whatsapp.com/en/general/21016748) which will receive the message.
-| message             | `string`                                      | `''`                     | Message to be sent. If `showPopup` is `true`, the input will be populated with this message.
-| position            | `'left'` &#124; `'right'`                     | `'left'`                 | Position of the button the screen.
-| popupMessage        | `string`                                      | `''`                     | Message to be shown as a received message in the fake chat.
-| showPopup           | `bool`                                        | `false`                  | Show a fake chat popup when the user hovers (on desktop) or clicks the button (on mobile).
-| autoOpenTimeout     | `Number`                                      | `0`                      | Set an amount of time in milliseconds for the popup to open automaticaly.
-| headerColor         | any css color `string`                        | `'#128C7E'`              | Background color of the popup window title bar.
-| headerTitle         | `string`                                      | `'WhatsApp Chat'`        | Text to be displayed at the popup window title bar.
-| buttonImage         | `jQuery` object &#124; css selector `string`  | [this one](whatsapp.svg) | Button background image. Must be an `img` or `svg` in order to be displayed properly.
-| zIndex              | `Number` &#124; `string`                      | none                     | Overrides `.floating-wpp` div z-index. Use a z-index css property value.
-| showOnIE            | `boolean`                                     | `true`                   | Whether to show or not the button on IE (recommended, since IE does not support WhatsApp Web).
-| size                | `string` (Any css option valid for width and height properties) | `'72px'` | The size of the button
-| backgroundColor     | Any css color `string`                        | `'#25D366'`               | The button backgrund color.
+| phone               | `string`                                      | `''`                     | [Número internacional WhatsApp](https://faq.whatsapp.com/en/general/21016748) que recibirá el mensaje.
+| message             | `string`                                      | `''`                     | Mensaje a enviar. Sí `showPopup` es `true`, la entrada se completará con este mensaje.
+| position            | `'left'` &#124; `'right'`                     | `'left'`                 | Posición inferior del botón en la pantalla.
+| popupMessage        | `string`                                      | `''`                     | Mensaje que se mostrará como mensaje recibido en el chat falso.
+| showPopup           | `bool`                                        | `false`                  | Muestre una ventana emergente de chat falso cuando el usuario se desplaza (en el escritorio) o hace clic en el botón (en el dispositivo móvil).
+| autoOpenTimeout     | `Number`                                      | `0`                      | Establezca una cantidad de tiempo en milisegundos para que la ventana emergente se abra automáticamente.
+| headerColor         | Cualquier color css `string`                        | `'#128C7E'`              | Color de fondo de la barra de título de la ventana emergente.
+| headerTitle         | `string`                                      | `'WhatsApp Chat'`        | Texto que se mostrará en la barra de título de la ventana emergente.
+| buttonImage         | `jQuery` objeto &#124; selector css `string`  | [this one](whatsapp.svg) | Imagen de fondo del botón. debe ser un `img` o un `svg` para que se muestre correctamente.
+| zIndex              | `Number` &#124; `string`                      | none                     | Anulaciones `.floating-wpp` div índice z. Usa un valor de propiedad css de índice z.
+| showOnIE            | `boolean`                                     | `true`                   | Muestra o no el botón en IE (recomendado, ya que IE no es compatible con WhatsApp Web).
+| size                | `string` (Cualquier opción css válida para las propiedades de ancho y alto) | `'72px'` | El tamaño del botón.
+| backgroundColor     | cualquier color css `string`                        | `'#25D366'`               | El color de fondo del botón.
