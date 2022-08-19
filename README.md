@@ -24,11 +24,11 @@ Crea un elemento div y seleccionalo con jQuery, luego llama al complemento usand
 
 ```html
 <body>
-  <div id="myDiv"></div>
+  <div id="MiBotonWhatsApp"></div>
 </body>
 <script type="text/javascript">
   $(function () {
-    $('#myDiv').floatingWhatsApp({
+    $('#MiBotonWhatsApp').floatingWhatsApp({
       phone: '525541696993'
     });
   });
@@ -39,7 +39,7 @@ Crea un elemento div y seleccionalo con jQuery, luego llama al complemento usand
 Habilita una pequeña ventana de chat falsa que flota sobre el botón:
 
 ```js
-$('#myDiv').floatingWhatsApp({
+$('#MiBotonWhatsApp').floatingWhatsApp({
     phone: '525541696993',
     popupMessage: 'Bienvenido, ¿cómo puedo ayudarte?',
     showPopup: true
@@ -53,7 +53,7 @@ $('#myDiv').floatingWhatsApp({
 Puedes personalizar la apariencia del botón y la ventana de chat:
 
 ```js
-$('#myDiv').floatingWhatsApp({
+$('#MiBotonWhatsApp').floatingWhatsApp({
     phone: '525541696993',
     popupMessage: 'Bienvenido, ¿cómo puedo ayudarte?',
     message: "Tengo una pregunta.",
@@ -62,7 +62,7 @@ $('#myDiv').floatingWhatsApp({
     headerTitle: 'WhatsApp - Chatear con Soluciones DC!',
     headerColor: 'crimson',
     backgroundColor: 'crimson',
-    buttonImage: '<img src="burger.svg" />'
+    buttonImage: '<img src="SolucionesDC.svg" />'
 });
 ```
 
