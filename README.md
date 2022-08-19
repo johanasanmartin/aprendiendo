@@ -62,7 +62,7 @@ $('#MiBotonWhatsApp').floatingWhatsApp({
     headerTitle: 'WhatsApp - Chatear con Soluciones DC!',
     headerColor: 'crimson',
     backgroundColor: 'crimson',
-    buttonImage: '<img src="SolucionesDC.svg" />'
+    buttonImage: '<img src="SolucionesDC.png" />'
 });
 ```
 
