@@ -1,8 +1,8 @@
-# WhatsApp Flotante
+# WhatsApp Emergente
 
-Este es un complemento de botón flotante de WhatsApp muy simple para jQuery.
+Este es un complemento de botón emergente de WhatsApp muy simple para jQuery.
 
-Puedes agregar un botón flotante a tu sitio que llama a la [API de WhatsApp Click para Chetear](https://faq.whatsapp.com/en/26000030/).
+Puedes agregar un botón emergente a tu sitio que llama a la [API de WhatsApp Click para Chetear](https://faq.whatsapp.com/en/26000030/).
 
 Comenzaras automáticamente un chat de WhatsApp con el número establecido cuando el usuario haga clic en el botón.
 
@@ -29,7 +29,7 @@ Crea un elemento div y seleccionalo con jQuery, luego llama al complemento usand
 <script type="text/javascript">
   $(function () {
     $('#myDiv').floatingWhatsApp({
-      phone: '5491133359850'
+      phone: '525541696993'
     });
   });
 </script>
